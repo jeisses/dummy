@@ -15,3 +15,13 @@ jobs:
       - echo answer is $PATH
       - npm ci
       - npm run test
+    artifacts:
+      - name: npm
+        path: ./node_modules
+  - name: test
+    commands: 
+      - ls
+    resources:
+      - name: npm
+        path: ./     
+         
