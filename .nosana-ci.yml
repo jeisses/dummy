@@ -12,7 +12,7 @@ global:
 jobs:
   - name: install-deps and run test
     commands: 
-      - echo answer is $PATH
+      - echo answer is $PATH path
       - npm ci
       - npm run test
     artifacts:
