@@ -17,6 +17,8 @@ jobs:
       - npm run test
     artifacts:
       - name: node_modules
+        paths:
+          - ./node_modules
   - name: test
     commands: 
       - ls node_modules
