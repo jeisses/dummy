@@ -16,12 +16,10 @@ jobs:
       - npm ci
       - npm run test
     artifacts:
-      - name: npm
-        path: ./node_modules
+      - name: node_modules
   - name: test
     commands: 
-      - ls
+      - ls node_modules
     resources:
-      - name: npm
-        path: ./     
+      - name: node_modules
          
