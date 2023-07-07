@@ -10,11 +10,7 @@ global:
 jobs:
   - name: install-deps and run test
     commands: 
-      - pwd
-      - ls
-      - echo answer is $PATH path
-      - npm ci
-      - npm run test
+      - asdf
     artifacts:
       - name: node_modules
         paths:
