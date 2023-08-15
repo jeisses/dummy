@@ -8,16 +8,8 @@ global:
       - all
 
 jobs:
-  - name: install-deps and run test
+  - name: node failure
     commands: 
       - echo test
-    artifacts:
-      - name: node_modules
-        paths:
-          - ./node_modules
-  - name: test
-    commands: 
-      - ls node_modules
-    resources:
-      - name: node_modules
+    image: doesnotexist
          
