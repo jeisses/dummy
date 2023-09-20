@@ -1,14 +1,10 @@
-nosana:
-  description: Run Test 2
-
 global:
-  image: node:16
   trigger:
     branch:
       - all
 
 jobs:
-  - name: node failure
+  - name: sleep-job
     commands: 
       - echo start (sleep 20)
       - sleep 20
