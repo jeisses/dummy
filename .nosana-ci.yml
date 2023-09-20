@@ -6,8 +6,6 @@ global:
 jobs:
   - name: sleep-job
     commands: 
-      - echo start (sleep 20)
       - sleep 20
-      - echo end
     image: alpine
          
