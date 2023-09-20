@@ -10,6 +10,8 @@ global:
 jobs:
   - name: node failure
     commands: 
-      - exit 6
+      - echo start (sleep 20)
+      - sleep 20
+      - echo end
     image: alpine
          
