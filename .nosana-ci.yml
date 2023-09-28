@@ -5,7 +5,9 @@ global:
 
 jobs:
   - name: sleep-job
+    secrets:
+      - TEST_SECRET
     commands: 
-      - sleep 20
+      - echo $TEST_SECRET
     image: alpine
          
